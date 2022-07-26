@@ -19,7 +19,14 @@
   padding: 20px;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 1);
 }
+.avisos_chicos{
+  text-align: center;
+}
+.portada_aviso{
+  text-align: center;
+}
 .portada_container p:first-child {
   font-size: 25px;
   font-weight: 500;
 }
+

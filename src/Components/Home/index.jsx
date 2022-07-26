@@ -4,14 +4,12 @@ const Header = () => {
     <div className="portada">
       <div className="portada_container">
         <div className="portada_aviso">
-          <p>Aviso Importante</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            dignissim risus vel arcu convallis, nec condimentum lectus euismod.
-            Ut tempor nisi id dapibus ultrices. Nullam molestie volutpat
-            commodo. Aenean vitae ex at tortor iaculis dictum vel ut lacus. In
-            eleifend, elit ut laoreet sollicitudin, magna ipsum elementum urna,
-            sit amet maximus turpis massa quis nunc.
+          <p>Avisos Importante</p>
+          <p className="avisos_chicos">
+           Inscripciones 25-26 Julio<br></br>
+           Inicio de clases 8 Agosto<br></br>
+           Asueto Septiembre 15 <br></br>
+           
           </p>
         </div>
       </div>
