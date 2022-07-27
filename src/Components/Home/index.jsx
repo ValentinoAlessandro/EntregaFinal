@@ -3,6 +3,7 @@ const Header = () => {
   return (
     <div className="portada">
       <div className="portada_container">
+      <h1>Bienvenido estudiante</h1>
         <div className="portada_aviso">
           <p>Avisos Importantes</p>
           <p className="avisos_chicos">
