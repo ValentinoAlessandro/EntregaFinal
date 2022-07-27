@@ -6,6 +6,11 @@ import Cursos from '../Cursos';
 import Horario from '../Horario';
 import Perfil from '../Perfil';
 import Home from '../Home';
+import Materia1 from '../Materia1';
+import Materia2 from '../Materia2';
+import Materia3 from '../Materia3';
+import Materia4 from '../Materia4';
+
 const Links = [
   {
     id: 1,
@@ -51,6 +56,10 @@ const index = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Calificaciones" element={<Calificaciones />} />
+        <Route path="/Materia1" element={<Materia1 />} />
+        <Route path="/Materia2" element={<Materia2/>} />
+        <Route path="/Materia3" element={<Materia3 />} />
+        <Route path="/Materia4" element={<Materia4 />} />
         <Route path="/Cursos" element={<Cursos />} />
         <Route path="/Horario" element={<Horario />} />
         <Route path="/Perfil" element={<Perfil />} />

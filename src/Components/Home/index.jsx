@@ -4,7 +4,7 @@ const Header = () => {
     <div className="portada">
       <div className="portada_container">
         <div className="portada_aviso">
-          <p>Avisos Importante</p>
+          <p>Avisos Importantes</p>
           <p className="avisos_chicos">
            Inscripciones 25-26 Julio<br></br>
            Inicio de clases 8 Agosto<br></br>
