@@ -1,10 +1,10 @@
 import React from 'react';
 
 const data = [
-  { materia: "Diseñoweb", parcial1: 80, parcial2: 80, final: 90 },
-  { materia: "Control", parcial1: 70, parcial2: 50, final: 70 },
-  { materia: "Embebidos", parcial1: 100, parcial2: 100, final: 100},
-  { materia: "Etica", parcial1: 80, parcial2: 90, final: 95},
+  { materia: " ", parcial1: " ", parcial2: " ", final: " " },
+  { materia: " ", parcial1: " ", parcial2: " ", final: " " },
+  { materia: " ", parcial1: " ", parcial2: " ", final: " "},
+  { materia: " ", parcial1: " ", parcial2: " ", final: " "},
 ]
 
 const Header = () => {

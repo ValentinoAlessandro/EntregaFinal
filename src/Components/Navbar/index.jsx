@@ -6,6 +6,7 @@ import Cursos from '../Cursos';
 import Horario from '../Horario';
 import Perfil from '../Perfil';
 import Home from '../Home';
+import Inicio from '../Inicio';
 import Materia1 from '../Materia1';
 import Materia2 from '../Materia2';
 import Materia3 from '../Materia3';
@@ -32,7 +33,13 @@ const Links = [
     title: 'Perfil',
     link: '/Perfil',
   },
+  {
+    id: 4,
+    title: 'Cerrar sesion',
+    link: '/Inicio',
+  },
 ];
+
 
 const index = () => {
   return (
@@ -63,6 +70,7 @@ const index = () => {
         <Route path="/Cursos" element={<Cursos />} />
         <Route path="/Horario" element={<Horario />} />
         <Route path="/Perfil" element={<Perfil />} />
+        <Route path="/inicio" element={<Inicio />} />
       </Routes>
     </Router>
   );
