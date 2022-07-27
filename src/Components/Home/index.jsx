@@ -9,7 +9,6 @@ const Header = () => {
            Inscripciones 25-26 Julio<br></br>
            Inicio de clases 8 Agosto<br></br>
            Asueto Septiembre 15 <br></br>
-           
           </p>
         </div>
       </div>
