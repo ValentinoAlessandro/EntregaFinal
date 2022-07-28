@@ -59,6 +59,18 @@
   align-items: center;
 }
 
+.portadacuenta {
+  width: 100%;
+  height: 500px;
+  background: url('../public/img/start.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .portada_container {
   height: auto;
   width: 800px;
@@ -206,6 +218,38 @@ td {
   width: 800px;
   height: 300px;
   float: right;
+  text-align: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.inicio_container {
+  height: auto;
+  width: 800px;
+  background: #000046; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #7ae8f0,
+    #f33a44
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #7ae8f0,
+    #f33a44
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 1);
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.usu{
+  float: center;
   text-align: center;
   justify-content: center;
   font-size: 36px;

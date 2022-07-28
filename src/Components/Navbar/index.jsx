@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import "./navbar.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -13,6 +14,22 @@ import Materia3 from "../Materia3";
 import Materia4 from "../Materia4";
 import Iniciarsesion from "../Iniciarsesion";
 import Crearcuenta from "../Crearcuenta";
+=======
+import React from 'react';
+import './navbar.css';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Calificaciones from '../Calificaciones';
+import Cursos from '../Cursos';
+import Horario from '../Horario';
+import Perfil from '../Perfil';
+import Home from '../Home';
+import Inicio from '../Inicio';
+import Materia1 from '../Materia1';
+import Materia2 from '../Materia2';
+import Materia3 from '../Materia3';
+import Materia4 from '../Materia4';
+import Crearcuenta from '../Crearcuenta';
+>>>>>>> 7c0eba1ec5beb288ef6ace9ba00d34072ae33db2
 
 const Links = [
   {
@@ -37,6 +54,7 @@ const Links = [
   },
   {
     id: 5,
+<<<<<<< HEAD
     title: "Cerrar sesion",
     link: "/Inicio",
   },
@@ -56,6 +74,15 @@ const Link2 = [
 ];
 
 const Header = () => {
+=======
+    title: 'Ingresar usuario',
+    link: '/Inicio',
+  },
+];
+
+
+const index = () => {
+>>>>>>> 7c0eba1ec5beb288ef6ace9ba00d34072ae33db2
   return (
     <Router>
       <div className="super_container">
@@ -81,6 +108,7 @@ const Header = () => {
         <Route path="/Materia2" element={<Materia2 />} />
         <Route path="/Materia3" element={<Materia3 />} />
         <Route path="/Materia4" element={<Materia4 />} />
+        <Route path="/Crearcuenta" element={<Crearcuenta />} />
         <Route path="/Cursos" element={<Cursos />} />
         <Route path="/Horario" element={<Horario />} />
         <Route path="/Perfil" element={<Perfil />} />
@@ -90,6 +118,7 @@ const Header = () => {
   );
 };
 
+<<<<<<< HEAD
 const Header2 = () => {
   return (
     <Router>
@@ -139,3 +168,6 @@ const index = () => {
 };
 
 export default index;
+=======
+export default index;
+>>>>>>> 7c0eba1ec5beb288ef6ace9ba00d34072ae33db2

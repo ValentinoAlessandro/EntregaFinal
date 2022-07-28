@@ -1,16 +1,21 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <div className="portada">
-      <div className="portada_container">
-      <h1>Inicio</h1>
-        <div className="portada_aviso">
-          <p>Inicio</p>
-          <p className="avisos_chicos">
-           Inicio<br></br>
-          </p>
-        </div>
+    <div className="portadacuenta">
+      <div className="inicio_container">
+      <h2>Inicia Sesion</h2>
+      <form className='usu'>
+      <label>Usuario:</label>
+      <input type= "text" required/>
+      <br></br>
+      <br></br>
+      <label>Contraseña:</label>
+      <input type= "text" required/>
+      </form>
+      <button>Enter</button>
+      <p><Link to = '/Crearcuenta' className="btn btn-primary">Crear cuenta</Link></p>
       </div>
     </div>
   );
