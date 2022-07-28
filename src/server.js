@@ -98,7 +98,7 @@ app.get("/api/estudiantes/:estudiante", function (req, res) {
   return res.json(false);
 });
 
-// Create New Characters - takes in JSON input
+// Crear nuevos estudiantes con JSON input
 app.post("/api/estudiantes", function (req, res) {
   // req.body hosts is equal to the JSON post sent from the user
   // This works because of our body parsing middleware
@@ -117,7 +117,7 @@ app.post("/api/estudiantes", function (req, res) {
   res.json(nuevoEstudiante);
 });
 
-// Starts the server to begin listening
+// Inicia el server en el puerto 4000
 // =============================================================
 app.listen(PORT, function () {
   console.log("App listening on PORT " + PORT);

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import "./navbar.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -12,24 +11,7 @@ import Materia1 from "../Materia1";
 import Materia2 from "../Materia2";
 import Materia3 from "../Materia3";
 import Materia4 from "../Materia4";
-import Iniciarsesion from "../Iniciarsesion";
 import Crearcuenta from "../Crearcuenta";
-=======
-import React from 'react';
-import './navbar.css';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Calificaciones from '../Calificaciones';
-import Cursos from '../Cursos';
-import Horario from '../Horario';
-import Perfil from '../Perfil';
-import Home from '../Home';
-import Inicio from '../Inicio';
-import Materia1 from '../Materia1';
-import Materia2 from '../Materia2';
-import Materia3 from '../Materia3';
-import Materia4 from '../Materia4';
-import Crearcuenta from '../Crearcuenta';
->>>>>>> 7c0eba1ec5beb288ef6ace9ba00d34072ae33db2
 
 const Links = [
   {
@@ -54,35 +36,12 @@ const Links = [
   },
   {
     id: 5,
-<<<<<<< HEAD
-    title: "Cerrar sesion",
+    title: "Ingresar usuario",
     link: "/Inicio",
   },
 ];
 
-const Link2 = [
-  {
-    id: 6,
-    title: "Iniciarsesion",
-    link: "/Iniciarsesion",
-  },
-  {
-    id: 7,
-    title: "Crearcuenta",
-    link: "/Crearcuenta",
-  },
-];
-
-const Header = () => {
-=======
-    title: 'Ingresar usuario',
-    link: '/Inicio',
-  },
-];
-
-
 const index = () => {
->>>>>>> 7c0eba1ec5beb288ef6ace9ba00d34072ae33db2
   return (
     <Router>
       <div className="super_container">
@@ -118,56 +77,4 @@ const index = () => {
   );
 };
 
-<<<<<<< HEAD
-const Header2 = () => {
-  return (
-    <Router>
-      <div className="super_container">
-        <nav className="nav_container">
-          <div>
-            <Link to={"/"}>
-              <h2 className="nav_title">Plataforma estudiantil</h2>
-            </Link>
-          </div>
-          <div className="nav_menu_container">
-            {Link2.map((l) => (
-              <Link to={l.link}>
-                <p key={l.id}>{l.title}</p>
-              </Link>
-            ))}
-          </div>
-        </nav>
-      </div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Crearcuenta" element={<Crearcuenta />} />
-        <Route path="/Iniciarsesion" element={<Iniciarsesion />} />
-      </Routes>
-    </Router>
-  );
-};
-
-let acc = 0;
-
-const index = () => {
-  if (acc == 0) {
-    return (
-      <div>
-        <Header />
-      </div>
-    );
-  }
-
-  if (acc == 1) {
-    return (
-      <div>
-        <Header2 />
-      </div>
-    );
-  }
-};
-
 export default index;
-=======
-export default index;
->>>>>>> 7c0eba1ec5beb288ef6ace9ba00d34072ae33db2
