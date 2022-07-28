@@ -7,13 +7,15 @@ const data = [
   { materia: " ", parcial1: " ", parcial2: " ", final: " "},
 ]
 
+let MA = "ALUMNO"
+
 const Header = () => {
   return (
     <div className="portadacal">
       <div className="App">
         <table>
           <tr>
-            <th>MATERIA</th>
+            <th>{MA}</th>
             <th>PARCIAL1</th>
             <th>PARCIAL2</th>
             <th>FINAL</th>

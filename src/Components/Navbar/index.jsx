@@ -11,7 +11,6 @@ import Materia1 from '../Materia1';
 import Materia2 from '../Materia2';
 import Materia3 from '../Materia3';
 import Materia4 from '../Materia4';
-import Iniciarsesion from '../Iniciarsesion';
 import Crearcuenta from '../Crearcuenta';
 
 const Links = [
@@ -37,27 +36,13 @@ const Links = [
   },
   {
     id: 5,
-    title: 'Cerrar sesion',
+    title: 'Ingresar usuario',
     link: '/Inicio',
   },
 ];
 
 
-const Link2 = [
-  {
-    id: 6,
-    title: 'Iniciarsesion',
-    link: '/Iniciarsesion',
-  },
-  {
-    id: 7,
-    title: 'Crearcuenta',
-    link: '/Crearcuenta',
-  },
-];
-
-
-const Header = () => {
+const index = () => {
   return (
     <Router>
       <div className="super_container">
@@ -83,6 +68,7 @@ const Header = () => {
         <Route path="/Materia2" element={<Materia2/>} />
         <Route path="/Materia3" element={<Materia3 />} />
         <Route path="/Materia4" element={<Materia4 />} />
+        <Route path="/Crearcuenta" element={<Crearcuenta />} />
         <Route path="/Cursos" element={<Cursos />} />
         <Route path="/Horario" element={<Horario />} />
         <Route path="/Perfil" element={<Perfil />} />
@@ -90,50 +76,6 @@ const Header = () => {
       </Routes>
     </Router>
   );
-};
-
-const Header2= () => {
-  return (
-    <Router>
-      <div className="super_container">
-        <nav className="nav_container">
-          <div>
-            <Link to={'/'}>
-              <h2 className="nav_title">Plataforma estudiantil</h2>
-            </Link>
-          </div>
-          <div className="nav_menu_container">
-            {Link2.map((l) => (
-              <Link to={l.link}>
-                <p key={l.id}>{l.title}</p>
-              </Link>
-            ))}
-          </div>
-        </nav>
-      </div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Crearcuenta" element={<Crearcuenta />} />
-        <Route path="/Iniciarsesion" element={<Iniciarsesion />} />
-      </Routes>
-    </Router>
-  );
-};
-
-let acc = 1;
-
-const index = () => {
-  if (acc ==0){  return (
-    <div>
-      <Header />
-    </div>
-  );}
-
-  if (acc ==1){  return (
-    <div>
-      <Header2 />
-    </div>
-  );}
 };
 
 export default index;
